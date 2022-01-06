@@ -1,5 +1,5 @@
 <?php
-namespace Builder;
+namespace Proyecto;
 //Constructor abstracto
 abstract class ConstructorDocumentacionVehiculo
 {

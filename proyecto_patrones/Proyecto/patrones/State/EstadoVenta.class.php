@@ -1,6 +1,6 @@
 <?php
 
-namespace StateProyecto;
+namespace Proyecto;
 
 require_once 'Venta.class.php';
 require_once 'Restaurant.class.php';

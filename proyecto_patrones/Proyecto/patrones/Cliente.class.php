@@ -1,5 +1,5 @@
 <?php
-namespace Builder;
+namespace Proyecto;
 
 require_once 'ConstructorDocumentoVehiculo.class.php';
 //Adaptar a proyecto, es el cliente del builder este

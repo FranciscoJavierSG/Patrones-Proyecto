@@ -1,5 +1,5 @@
 <?php
-namespace Builder;
+namespace Proyecto;
 
 require_once 'ConstructorDocumentoVehiculo.class.php';
 require_once 'DocumentacionHtml.class.php';

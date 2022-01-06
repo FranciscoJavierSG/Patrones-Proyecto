@@ -1,5 +1,5 @@
 <?php
-namespace Builder;
+namespace Proyecto;
 
 //HAY QUE VER BIEN ESTO
 require_once 'Documentacion.class.php';

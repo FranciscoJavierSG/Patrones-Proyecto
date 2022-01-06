@@ -1,20 +1,20 @@
 <?php
 
-namespace StateProyecto;
+namespace Proyecto;
 
 require_once 'EstadoVenta.class.php';
 require_once 'Venta.class.php';
-require_once 'PorPagar.class.php';
+require_once 'VentaEntregada.class.php';
 require_once 'Restaurant.class.php';
 
-class Consumiendo extends EstadoVenta {
+class VentaEnEspera extends EstadoVenta {
 
     public function __construct(Venta $venta) {
         parent::__construct($venta);
     }
 
     public function estadoSiguiente() {
-        return new PorPagar($this->venta);
+        return new VentaEntregada($this->venta);
     }
 
     public function getEstado() {

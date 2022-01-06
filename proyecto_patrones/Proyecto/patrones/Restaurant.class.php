@@ -1,5 +1,5 @@
 <?php
-namespace State;
+namespace Proyecto;
 
 class Producto
 {

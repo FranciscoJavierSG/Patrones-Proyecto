@@ -1,6 +1,6 @@
 <?php
 
-namespace StateProyecto;
+namespace Proyecto;
 
 class TipoVenta {
 
