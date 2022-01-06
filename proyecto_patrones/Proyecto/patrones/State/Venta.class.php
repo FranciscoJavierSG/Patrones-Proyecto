@@ -13,12 +13,12 @@ require_once 'Restaurant.class.php';
 
 class Venta {
 
-    protected $id_venta; //Falta la asignación del id
+    private $id_venta; //Falta la asignación del id
     protected $estadoVenta;
     protected $id_pedido; //id del pedido que se entrega en la tabla Pedido a la tabla Venta
 
     public function __construct() {
-        //$this->id_venta = ????????
+        //$this->id_venta = new Venta(); ??????????
         $this->estadoVenta = new TipoVenta();
         $this->id_pedido = new Pedido();
     }

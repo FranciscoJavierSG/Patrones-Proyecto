@@ -3,6 +3,7 @@ namespace Builder;
 
 require_once 'ConstructorDocumentoVehiculo.class.php';
 
+//Esta clase sería nuestra venta.class creo
 class Vendedor
 {
     /**
