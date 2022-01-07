@@ -19,8 +19,7 @@ abstract class ConstructorDocumentacionVehiculo
      *
      * @param string $nombreSolicitante            
      */
-    public abstract function construyeSolicitudMatriculacion(
-            $nombreSolicitante);
+    public abstract function construyeSolicitudMatriculacion($nombreSolicitante);
 
     /**
      *

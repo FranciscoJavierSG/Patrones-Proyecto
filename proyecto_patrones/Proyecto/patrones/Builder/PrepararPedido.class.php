@@ -14,7 +14,7 @@ class PrepararPedido extends GenerarPedido
 
     public function __construct()
     {
-        $this->pedido = new Documentacionhtml(); //????????????
+        $this->pedido = new Pedido();
     }
 
     public function construyePedido($entrada, $plato_fondo, $postre){
@@ -27,6 +27,7 @@ class PrepararPedido extends GenerarPedido
             </HTML>";
     }
 
+    /*
     public function construyeFormularioDePedido($nombreCliente)
     {
         $documento = 
@@ -40,7 +41,7 @@ class PrepararPedido extends GenerarPedido
         $documento = '<HTML>Solicitud de matriculaci�n ' .
             "Solicitante : $nombreSolicitante</HTML>";
         $this->documentacion->agregaDocumento($documento);
-    }
+    }*/
 }
 
 ?>

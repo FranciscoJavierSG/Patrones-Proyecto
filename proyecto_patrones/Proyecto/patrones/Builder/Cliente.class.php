@@ -7,13 +7,13 @@ class Vendedor
 {
     /**
      * 
-     * @var ConstructorDocumentacionVehiculo
+     * @var constructor
      */
     protected $constructor;
     
     /**
      *
-     * @param ConstructorDocumentacionVehiculo $constructor            
+     * @param constructor          
      */
     public function __construct(ConstructorDocumentacionVehiculo $constructor)
     {
@@ -22,8 +22,8 @@ class Vendedor
 
     /**
      *
-     * @param string $nombreCliente            
-     * @return Documentacion
+     * @param string nombreCliente            
+     * @return constructor //????
      */
     public function construye($nombreCliente)
     {

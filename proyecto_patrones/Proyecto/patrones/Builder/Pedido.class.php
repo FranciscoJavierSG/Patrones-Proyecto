@@ -5,7 +5,7 @@ namespace Proyecto;
 //HAY QUE VER BIEN ESTO
 require_once 'PrepararPedido.class.php';
 
-class Pedido extends PrepararPedido {
+class Pedido{
     
     protected $id_pedido;
     public $entrada;
@@ -13,8 +13,26 @@ class Pedido extends PrepararPedido {
     public $postre;
 
     public function construyePedido() {//??????
-        $this->contenido[] = $documento;
+        //$this->id_pedido = $var;no cacho de donde sale este, en vola falta algo que lo manipule
+        $this->entrada = $entrada;
+        $this->plato_fondo=$plato_fondo;
+        $this->postre=$postre;
+
+
+        return array('id_pedido' => '1',
+                    'entrada' => $this->entrada,
+                    'plato_fondo' => $this->plato_fondo,
+                    'postre' => $this->postre );
+
     }
+/*
+    public function verPedido(){
+        return array('id_pedido' => '1',
+        'entrada' => $this->entrada,
+        'plato_fondo' => $this->plato_fondo,
+        'postre' => $this->postre );
+    }
+*/
 
     /*public function imprime() {
 
