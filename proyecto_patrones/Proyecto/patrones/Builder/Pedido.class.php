@@ -36,7 +36,7 @@ class Pedido{
         'plato_fondo' => $this->plato_fondo,
         'postre' => $this->postre );
     }
-*/b 
+*/ 
 
     /*public function imprime() {
 
