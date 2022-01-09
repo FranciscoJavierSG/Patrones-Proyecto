@@ -7,22 +7,20 @@ interface FabricaPedidos
     //Hay que cambiar los parametros
     /**
      *
-     * @param string $modelo            
-     * @param string $color            
-     * @param int $potencia            
-     * @param double $espacio            
-     * @return Automovil
+     * @param array $ingredientes        
+     * @param bool $disponible            
+               
+     * @return PlatoEntrada
      */
-    public function crearPlatoEntrada($modelo, $color, $potencia,  $espacio);
+    public function crearPlatoEntrada($ingredientes, $disponible);
 
     /**
      *
-     * @param string $modelo            
-     * @param string $color            
-     * @param int $potencia            
-     * @return Scooter
+     * @param array $ingredientes        
+     * @param bool $disponible            
+     * @return PlatoFondo
      */
-    public function crearPlatoFondo($modelo, $color, $potencia);
+    public function crearPlatoFondo($ingredientes, $disponible);
 }
 
 ?>

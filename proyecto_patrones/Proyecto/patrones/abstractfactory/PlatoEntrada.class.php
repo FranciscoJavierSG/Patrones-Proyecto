@@ -6,34 +6,35 @@ abstract class PlatoEntrada
     //Como en todas las weas, faltan las variables
     /**
      * 
-     * @var string
+     * @var array
      */
-    public $modelo;
+    public $ingredientes;
     /**
      * 
-     * @var string
+     * @var bool
      */
-    public $color;
-    /**
-     * 
-     * @var int
-     */
-    public $potencia;
-    
+    public $disponible;
+ 
     /**
      *
-     * @param string $modelo            
-     * @param string $color            
-     * @param int $potencia            
+     * @param array $ingredientes          
+     * @param bool $disponible        
+     *           
      */
-    public function __construct($modelo, $color, $potencia)
+    public function __construct($ingredientes, $disponible)
     {
-        $this->modelo = $modelo;
-        $this->color = $color;
-        $this->potencia = $potencia;
+        $this->ingredientes = $ingredientes;
+        $this->disponible = $disponible;
+      
     }
 
-    public abstract function mostrar();
+    public abstract function verPlatoEntrada();
+
+    public abstract function crearPlatoEntrada();
+
+    public abstract function eliminarPlatoEntrada();
+
+    public abstract function editarPlatoEntrada();
 }
 
 ?>

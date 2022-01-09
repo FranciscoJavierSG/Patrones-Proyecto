@@ -5,35 +5,47 @@ require_once 'FabricaPedidos.class.php';
 require_once 'EntradaCarnica.class.php';
 require_once 'FondoCarnico.class.php';
 
-class FabricaVehiculoElectrico implements FabricaVehiculo
+class FabricaPedidosCarnica implements FabricaPedidos
 {
 
-    //Falta definir las variables
     /**
      *
-     * @param string $modelo            
-     * @param string $color            
-     * @param int $potencia            
-     * @param double $espacio            
-     * @return Automovil
+     * @param array $ingredientes        
+     * @param bool $disponible          
+     * @return EntradaCarnica
      */
-    public function crearPlatoEntrada($modelo, $color, $potencia, $espacio)
+    public function crearPlatoEntrada($ingredientes, $disponible)
     {
-        return new AutomovilElectrico($modelo, $color, 
-                $potencia, $espacio);
+        return new EntradaCarnica($ingredientes, $disponible);
     }
 
     /**
      *
-     * @param string $modelo            
-     * @param string $color            
-     * @param int $potencia            
-     * @return Scooter
+     * @param array $ingredientes        
+     * @param bool $disponible            
+     * @return FondoCarnico
      */
-    public function crearPlatoFondo($modelo, $color, $potencia)
+    public function crearPlatoFondo($ingredientes, $disponible)
     {
-        return new ScooterElectrico($modelo, $color, $potencia);
+        return new FondoCarnico($ingredientes, $disponible);
     }
+
+
+    /**
+     *
+     * @param array $ingredientes        
+     * @param bool $disponible          
+     * @return 
+     */
+    public function validarStockIngredientes($ingredientes, $disponible)
+    {
+       
+        //FALTA
+
+
+    }
+
+
 }
 
 ?>

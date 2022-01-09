@@ -9,25 +9,50 @@ class EntradaVegana extends PlatoEntrada
 //Falta definir las variables
     /**
      *
-     * @param string $modelo            
-     * @param string $color            
-     * @param int $potencia            
+     * @param array $ingredientes          
+     * @param bool $disponible            
+     * @param int $id_entrada         
      */
-    public function __construct($modelo, $color, $potencia)
+    public function __construct($ingredientes, $disponible, $id_entrada)
     {
-        parent::__construct($modelo, $color, $potencia);
+        parent::__construct($ingredientes, $disponible, $id_entrada);
     }
 
-    public function mostrar()
+    
+
+    public function crearPlatoEntrada()
+    {
+      
+      
+     
+    }
+
+    public function verPlatoEntrada()
     {
       
         return array(
-            'tipo' =>  "Electrico",
-            'modelo' =>  $this->modelo,
-        'color' => $this->color,
-        'potencia' => $this->potencia,
+    
+        'ingredientes' =>  $this->ingredientes,
+        'disponible' => $this->disponible,
+        'id_entrada' => $this->id_entrada,
         );
     }
+
+    public function eliminarPlatoEntrada()
+    {
+      
+      
+     
+    }
+
+    public function editarPlatoEntrada()
+    {
+      
+      
+     
+    }
+
 }
 
 ?>
+

@@ -5,35 +5,48 @@ require_once 'FabricaPedidos.class.php';
 require_once 'EntradaVegana.class.php';
 require_once 'FondoVegano.class.php';
 
-class FabricaVehiculoElectrico implements FabricaVehiculo
+class FabricaPedidosVegana implements FabricaPedidos
 {
 
-    //Falta definir las variables
     /**
      *
-     * @param string $modelo            
-     * @param string $color            
-     * @param int $potencia            
-     * @param double $espacio            
-     * @return Automovil
+     * @param array $ingredientes        
+     * @param bool $disponible                
+     * @return EntradaVegana
      */
-    public function crearPlatoEntrada($modelo, $color, $potencia, $espacio)
+    public function crearPlatoEntrada($ingredientes, $disponible )
     {
-        return new AutomovilElectrico($modelo, $color, 
-                $potencia, $espacio);
+        return new EntradaVegana($ingredientes, $disponible );
     }
 
     /**
      *
-     * @param string $modelo            
-     * @param string $color            
-     * @param int $potencia            
-     * @return Scooter
+     * @param array $ingredientes        
+     * @param bool $disponible            
+     * @return FondoVegano
      */
-    public function crearPlatoFondo($modelo, $color, $potencia)
+    public function crearPlatoFondo($ingredientes, $disponible)
     {
-        return new ScooterElectrico($modelo, $color, $potencia);
+        return new FondoVegano($ingredientes, $disponible);
     }
+
+
+    /**
+     *
+     * @param array $ingredientes        
+     * @param bool $disponible          
+     * @return 
+     */
+    public function validarStockIngredientes($ingredientes, $disponible)
+    {
+       
+        //FALTA
+
+
+    }
+
+
+
 }
 
 ?>
