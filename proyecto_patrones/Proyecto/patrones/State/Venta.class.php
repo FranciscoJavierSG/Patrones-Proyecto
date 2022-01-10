@@ -8,7 +8,7 @@ require_once 'Restaurant.class.php';
 
 class Venta {
 
-    private $id_venta; //Falta la asignación del id
+    private $venta; //Falta la asignación del id
     protected $estadoVenta;
     protected $id_pedido; //id del pedido que se entrega en la tabla Pedido a la tabla Venta
 
@@ -27,11 +27,11 @@ class Venta {
     }
 
     public function crearVenta() {
-        $this->id_venta = new Venta(); // no sé si ta bueno
+        $this->venta = new Venta(); // no sé si ta bueno
     }
 
-    public function verVenta() {
-        return $this->$id_venta; // no sé si ta bueno
+    public function getVenta() {
+        return $this->$venta; // no sé si ta bueno
     }
 
     public function editarVenta() {

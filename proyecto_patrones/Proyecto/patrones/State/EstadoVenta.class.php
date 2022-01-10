@@ -14,9 +14,7 @@ abstract class EstadoVenta {
         $this->venta = $venta;
     }
 
-    public function estadoSiguiente() {
-        
-    }
+    public abstract function estadoSiguiente();
 
     public function getEstado() {
 
