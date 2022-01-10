@@ -18,13 +18,13 @@ class EntradaVegana extends PlatoEntrada
         parent::__construct($ingredientes, $disponible, $id_entrada);
     }
 
-    
-
-    public function crearPlatoEntrada()
+    public function crearPlatoEntrada($ingredientes, $disponible, $id_entrada)
     {
-      
-      
-     
+        return new PlatoEntrada(
+            $ingredientes,
+            $disponible,
+            $id_entrada
+        );
     }
 
     public function verPlatoEntrada()

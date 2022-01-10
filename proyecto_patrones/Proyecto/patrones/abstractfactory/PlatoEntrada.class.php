@@ -14,6 +14,9 @@ abstract class PlatoEntrada
      * @var bool
      */
     public $disponible;
+
+
+    public $id_entrada
  
     /**
      *
@@ -21,10 +24,11 @@ abstract class PlatoEntrada
      * @param bool $disponible        
      *           
      */
-    public function __construct($ingredientes, $disponible)
+    public function __construct($ingredientes, $disponible, $id_entrada)
     {
         $this->ingredientes = $ingredientes;
         $this->disponible = $disponible;
+        $this->id_entrada = $id_entrada;
       
     }
 
