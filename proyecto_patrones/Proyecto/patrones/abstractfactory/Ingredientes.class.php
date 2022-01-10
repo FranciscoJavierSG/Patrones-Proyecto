@@ -5,14 +5,28 @@ class Ingredientes {
 
     /**
      *
-     * @param array $ingrediente                      
-     * @return $ingrediente
+     * @param int $stock         
+     * @param String $nombre
+     * @param tipoIngrediente $tipoIngrediente                  
+     * @return Ingrediente
      */
-    public function agregarIngrediente($ingrediente);
-    public function eliminarIngrediente($ingrediente);
-    public function verIngrediente();
-    public function modificarIngrediente();
-    public function modificarStock();
+
+    //Habria que definir bien esto,  
+    public function agregarIngrediente($stock,$nombre,$tipoIngrediente){
+
+    }
+    public function eliminarIngrediente($stock,$nombre,$tipoIngrediente){
+
+    }
+    public function verIngrediente($stock,$nombre,$tipoIngrediente){
+
+    }
+    public function modificarIngrediente($stock,$nombre,$tipoIngrediente){
+
+    }
+    public function modificarStock($stock,$nombre,$tipoIngrediente){
+        
+    }
 
 }
 
