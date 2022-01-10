@@ -23,7 +23,7 @@ class VentaEntregada extends EstadoVenta {
         }
     }
 
-    public function getEstado() {
+    /*public function getEstado() {
     }
 
     public function editarVenta() {
@@ -37,5 +37,5 @@ class VentaEntregada extends EstadoVenta {
 
     public function eliminaVenta() {
         //$this->pedido->getProductos()->clear();
-    }
+    }*/
 }

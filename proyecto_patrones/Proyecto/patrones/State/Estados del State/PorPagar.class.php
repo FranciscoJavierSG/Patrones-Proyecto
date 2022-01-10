@@ -17,7 +17,7 @@ class PorPagar extends EstadoVenta {
         return new Pagado($this->venta);
     }
 
-    public function getEstado() {
+    /*public function getEstado() {
     }
 
     public function editarVenta() {
@@ -31,5 +31,5 @@ class PorPagar extends EstadoVenta {
 
     public function eliminaVenta() {
         //$this->pedido->getProductos()->clear();
-    }
+    }*/
 }

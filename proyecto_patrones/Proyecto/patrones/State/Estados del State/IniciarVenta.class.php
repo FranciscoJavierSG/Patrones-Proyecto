@@ -17,7 +17,7 @@ class IniciarVenta extends EstadoVenta{
         return new VentaEnEspera($this->venta);
     }
 
-    public function getEstado() {
+    /*public function getEstado() {
     }
 
     public function editarVenta() {
@@ -31,5 +31,5 @@ class IniciarVenta extends EstadoVenta{
 
     public function eliminaVenta() {
         //$this->pedido->getProductos()->clear();
-    }
+    }*/
 }

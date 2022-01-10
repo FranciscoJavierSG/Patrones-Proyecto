@@ -12,7 +12,7 @@ class Pagado extends EstadoVenta {
         parent::__construct($venta);
     }
 
-    public function getEstado() {
+    /*public function getEstado() {
     }
 
     public function editarVenta() {
@@ -26,5 +26,5 @@ class Pagado extends EstadoVenta {
 
     public function eliminaVenta() {
         //$this->pedido->getProductos()->clear();
-    }
+    }*/
 }
