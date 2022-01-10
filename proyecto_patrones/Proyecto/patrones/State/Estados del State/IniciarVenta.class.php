@@ -17,19 +17,4 @@ class IniciarVenta extends EstadoVenta{
         return new VentaEnEspera($this->venta);
     }
 
-    /*public function getEstado() {
-    }
-
-    public function editarVenta() {
-    }
-
-    public function cancelar() {
-    }
-
-    public function getListaComida() {
-    }
-
-    public function eliminaVenta() {
-        //$this->pedido->getProductos()->clear();
-    }*/
 }

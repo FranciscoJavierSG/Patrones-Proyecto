@@ -16,26 +16,12 @@ class VentaEntregada extends EstadoVenta {
 
     public function estadoSiguiente() {
 
-        if ($this->venta->estadoVenta <= 1) {
+        if ($this->venta->tipoVenta >= 2) {
             return new Consumiendo($this->venta);
-        } else if ($this->venta->estadoVenta >= 2) {
+        } else if ($this->venta->tipoVenta <= 1) {
             return new PorPagar($this->venta);
         }
+        
     }
 
-    /*public function getEstado() {
-    }
-
-    public function editarVenta() {
-    }
-
-    public function cancelar() {
-    }
-
-    public function getListaComida() {
-    }
-
-    public function eliminaVenta() {
-        //$this->pedido->getProductos()->clear();
-    }*/
 }

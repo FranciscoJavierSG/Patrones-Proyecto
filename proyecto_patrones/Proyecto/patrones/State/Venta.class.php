@@ -8,30 +8,30 @@ require_once 'Restaurant.class.php';
 
 class Venta {
 
-    private $venta; //Falta la asignación del id
-    protected $estadoVenta;
-    protected $id_pedido; //id del pedido que se entrega en la tabla Pedido a la tabla Venta
+    protected $tipoVenta;
+    protected $venta;
+    protected $pedido;
 
-    public function __construct() {
-        //$this->id_venta = new Venta(); ??????????
-        $this->estadoVenta = new TipoVenta();
-        $this->id_pedido = new Pedido();
+    public function __construct(TipoVenta $tipoDeVenta) {
+        $this->tipoVenta = $tipoDeVenta; 
+        $this->venta = new IniciarVenta($this);
+        $this->pedido = new Pedido();
     }
 
     public function estadoSiguiente() {
-        $this->estadoVenta = $this->estadoVenta->estadoSiguiente();
+        $this->venta = $this->venta->estadoSiguiente();
     }
 
-    public function getEstado($id_pedido) {
-        return $this->$id_pedido->estadoVenta; // no sé si ta bueno
+    public function getEstado($venta) {
+        return $this->venta; // no sé si ta bueno
     }
 
     public function crearVenta() {
-        $this->venta = new Venta(); // no sé si ta bueno
+        
     }
 
-    public function getVenta() {
-        return $this->$venta; // no sé si ta bueno
+    public function verVenta() {
+
     }
 
     public function editarVenta() {
@@ -39,11 +39,11 @@ class Venta {
     }
 
     public function getHistorialVenta() {
-        //ni idea
+        //hacer el historial para todas las ventas existentes (debe mostrar todos los datos del cliente, la venta y el pedido)
     }
 
     public function eliminarVenta() {
-        $this->id_pedido->eliminarVenta();
+        $this->venta->eliminarVenta();
     }
 
 }
