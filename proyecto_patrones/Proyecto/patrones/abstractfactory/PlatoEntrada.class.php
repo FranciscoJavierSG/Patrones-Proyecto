@@ -3,17 +3,11 @@ namespace Proyecto;
 
 abstract class PlatoEntrada
 {
-    //Como en todas las weas, faltan las variables
     /**
      * 
      * @var array
      */
     public $ingredientes;
-    /**
-     * 
-     * @var bool
-     */
-    public $disponible;
     /**
      * 
      * @var int
@@ -29,16 +23,14 @@ abstract class PlatoEntrada
  
     /**
      *
-     * @param array $ingredientes          
-     * @param bool $disponible     
+     * @param array $ingredientes           
      * @param int $id_plato  
      * @param string $nombre
      *           
      */
-    public function __construct($ingredientes, $disponible, $id_plato, $nombre)
+    public function __construct($ingredientes, $id_plato, $nombre)
     {
         $this->ingredientes = $ingredientes;
-        $this->disponible = $disponible;
         $this->id_plato = $id_plato;
         $this->nombre = $nombre;
       

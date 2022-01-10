@@ -12,32 +12,27 @@ class FabricaPedidosCarnica implements FabricaPedidos
     /**
      *
      * @param array $ingredientes        
-     * @param bool $disponible   
      * @param int $id_plato     
      * @param string $nombre         
      * @return EntradaCarnica
      */
 
-     //Logica que creo que es la correcta
-    //Estos metodos deberian llamar a ingredientes primero ver si existe el ingredinete
-    //si no existe arrojar error
-    //Si existiese restarlo y fabricar el plato
-    public function crearPlatoEntrada($ingredientes, $disponible, $id_plato, $nombre)
+
+    public function crearPlatoEntrada($ingredientes, $id_plato, $nombre)
     {
-        return new EntradaCarnica($ingredientes, $disponible, $id_plato, $nombre);
+        return new EntradaCarnica($ingredientes, $id_plato, $nombre);
     }
 
     /**
      *
-     * @param array $ingredientes        
-     * @param bool $disponible    
+     * @param array $ingredientes          
      * @param int $id_plato     
      * @param string $nombre         
      * @return FondoCarnico
      */
-    public function crearPlatoFondo($ingredientes, $disponible, $id_plato, $nombre)
+    public function crearPlatoFondo($ingredientes, $id_plato, $nombre)
     {
-        return new FondoCarnico($ingredientes, $disponible, $id_plato, $nombre);
+        return new FondoCarnico($ingredientes, $id_plato, $nombre);
     }
 
 }
