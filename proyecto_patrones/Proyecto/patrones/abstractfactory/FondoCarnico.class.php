@@ -6,26 +6,19 @@ require_once 'PlatoFondo.class.php';
 
 class FondoCarnico extends PlatoFondo
 {
-//Falta definir las variables
     /**
      *
      * @param array $ingredientes          
      * @param bool $disponible            
-     * @param int $id_entrada         
+     * @param int $id_plato     
+     * @param string $nombre    
      */
-    public function __construct($ingredientes, $disponible, $id_entrada)
+    public function __construct($ingredientes, $disponible, $id_plato, $nombre)
     {
-        parent::__construct($ingredientes, $disponible, $id_entrada);
+        parent::__construct($ingredientes, $disponible, $id_plato, $nombre;
     }
 
-    
 
-    public function crearPlatoFondo()
-    {
-      
-      
-     
-    }
 
     public function verPlatoFondo()
     {
@@ -34,23 +27,12 @@ class FondoCarnico extends PlatoFondo
     
         'ingredientes' =>  $this->ingredientes,
         'disponible' => $this->disponible,
-        'id_entrada' => $this->id_entrada,
+        'id_plato' => $this->id_plato,
+        'nombre' => $this->nombre,
         );
     }
 
-    public function eliminarPlatoFondo()
-    {
-      
-      
-     
-    }
 
-    public function editarPlatoFondo()
-    {
-      
-      
-     
-    }
 }
 
 ?>

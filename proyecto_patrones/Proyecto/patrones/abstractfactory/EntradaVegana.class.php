@@ -11,21 +11,14 @@ class EntradaVegana extends PlatoEntrada
      *
      * @param array $ingredientes          
      * @param bool $disponible            
-     * @param int $id_entrada         
+     * @param int $id_plato     
+     * @param string $nombre       
      */
-    public function __construct($ingredientes, $disponible, $id_entrada)
+    public function __construct($ingredientes, $disponible, $id_plato, $nombre)
     {
-        parent::__construct($ingredientes, $disponible, $id_entrada);
+        parent::__construct($ingredientes, $disponible, $id_plato, $nombre);
     }
 
-    public function crearPlatoEntrada($ingredientes, $disponible, $id_entrada)
-    {
-        return new PlatoEntrada(
-            $ingredientes,
-            $disponible,
-            $id_entrada
-        );
-    }
 
     public function verPlatoEntrada()
     {
@@ -34,23 +27,11 @@ class EntradaVegana extends PlatoEntrada
     
         'ingredientes' =>  $this->ingredientes,
         'disponible' => $this->disponible,
-        'id_entrada' => $this->id_entrada,
+        'id_plato' => $this->id_plato,
+        'nombre' => $this->nombre,
         );
     }
 
-    public function eliminarPlatoEntrada()
-    {
-      
-      
-     
-    }
-
-    public function editarPlatoEntrada()
-    {
-      
-      
-     
-    }
 
 }
 

@@ -14,31 +14,38 @@ abstract class PlatoEntrada
      * @var bool
      */
     public $disponible;
+    /**
+     * 
+     * @var int
+     */
 
+    public $id_plato
+    /**
+     * 
+     * @var string
+     */
 
-    public $id_entrada
+    public $nombre
  
     /**
      *
      * @param array $ingredientes          
-     * @param bool $disponible        
+     * @param bool $disponible     
+     * @param int $id_plato  
+     * @param string $nombre
      *           
      */
-    public function __construct($ingredientes, $disponible, $id_entrada)
+    public function __construct($ingredientes, $disponible, $id_plato, $nombre)
     {
         $this->ingredientes = $ingredientes;
         $this->disponible = $disponible;
-        $this->id_entrada = $id_entrada;
+        $this->id_plato = $id_plato;
+        $this->nombre = $nombre;
       
     }
 
     public abstract function verPlatoEntrada();
-
-    public abstract function crearPlatoEntrada();
-
-    public abstract function eliminarPlatoEntrada();
-
-    public abstract function editarPlatoEntrada();
+   
 }
 
 ?>

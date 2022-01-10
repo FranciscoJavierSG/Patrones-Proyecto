@@ -14,27 +14,39 @@ abstract class PlatoFondo
      * @var bool
      */
     public $disponible;
+      /**
+     * 
+     * @var int
+     */
+
+    public $id_plato
+    /**
+     * 
+     * @var string
+     */
+
+    public $nombre
  
     /**
      *
      * @param array $ingredientes          
-     * @param bool $disponible        
+     * @param bool $disponible    
+     * @param int $id_plato   
+     * @param string $nombre    
      *           
      */
-    public function __construct($ingredientes, $disponible)
+    public function __construct($ingredientes, $disponible, $id_plato, $nombre)
     {
         $this->ingredientes = $ingredientes;
         $this->disponible = $disponible;
+        $this->id_plato = $id_plato;
+        $this->nombre = $nombre;
       
     }
 
     public abstract function verPlatoFondo();
 
-    public abstract function crearPlatoFondo();
 
-    public abstract function eliminarPlatoFondo();
-
-    public abstract function editarPlatoFondo();
 }
 
 ?>
