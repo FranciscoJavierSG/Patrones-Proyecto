@@ -15,12 +15,16 @@ class VentaEntregada extends EstadoVenta {
     }
 
     //ver bien esto
-    public function estadoSiguiente() {
+    /*public function estadoSiguiente() {
         if ($this->venta->tipoVenta >= 2) {
             return new Consumiendo($this->venta);
         } else if ($this->venta->tipoVenta <= 1) {
             return new PorPagar($this->venta);
         }
+    }*/
+
+    public function estadoSiguiente() {
+        return new Consumiendo($this->venta);
     }
 
     public function verVenta() {
