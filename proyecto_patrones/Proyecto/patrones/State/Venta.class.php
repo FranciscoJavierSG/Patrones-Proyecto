@@ -5,6 +5,7 @@ namespace Proyecto;
 require_once 'EstadoVenta.class.php';
 require_once 'TipoVenta.class.php';
 require_once 'Restaurant.class.php';
+require_once 'Cliente.class.php';
 
 class Venta {
 
@@ -38,9 +39,7 @@ class Venta {
         //ni idea
     }
 
-    public function getHistorialVenta() {
-        //hacer el historial para todas las ventas existentes (debe mostrar todos los datos del cliente, la venta y el pedido)
-    }
+    
 
     public function eliminarVenta() {
         $this->venta->eliminarVenta();
