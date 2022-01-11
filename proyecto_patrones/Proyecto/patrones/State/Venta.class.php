@@ -15,9 +15,9 @@ class Venta {
     protected $pedido;
 
     public function __construct($tipoDeVenta) {
-        $this->tipoVenta = $tipoDeVenta; 
+        $this->tipoVenta = $tipoDeVenta;
         $this->venta = new IniciarVenta($this);
-        $this->pedido = new Pedido();
+        //$this->pedido = new Pedido();
     }
 
     public function estadoSiguiente() {
@@ -29,21 +29,18 @@ class Venta {
     }
 
     public function crearVenta() {
-        
     }
 
     public function verVenta() {
-
     }
 
     public function editarVenta() {
         //ni idea
     }
 
-    
+
 
     public function eliminarVenta() {
         $this->venta->eliminarVenta();
     }
-
 }
