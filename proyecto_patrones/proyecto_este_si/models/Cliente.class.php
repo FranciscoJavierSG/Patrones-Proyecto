@@ -12,7 +12,7 @@ class Cliente {
     public $telefono;
     public $ventas;
 
-    public function __construct($id_cliente, $nombre, $correo, $telefono,Restaurant $ventas) {
+    public function __construct($id_cliente, $nombre, $correo, $telefono,$ventas) {
         $this->id_cliente = $id_cliente;
         $this->nombre = $nombre;
         $this->correo = $correo;
