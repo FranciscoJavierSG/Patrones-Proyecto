@@ -17,13 +17,10 @@ class VentaEnEspera extends EstadoVenta {
         return new VentaEntregada($this->venta);
     }
 
-    public function getEstado() {
+    public function verVenta() {
     }
 
     public function editarVenta() {
-    }
-
-    public function getListaComida() {
     }
 
     public function eliminarVenta() {

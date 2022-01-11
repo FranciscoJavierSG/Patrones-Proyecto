@@ -17,13 +17,10 @@ class Consumiendo extends EstadoVenta {
         return new PorPagar($this->venta);
     }
 
-    public function getEstado() {
+    public function verVenta() {
     }
 
     public function editarVenta() {
-    }
-
-    public function getListaComida() {
     }
 
     public function eliminarVenta() {

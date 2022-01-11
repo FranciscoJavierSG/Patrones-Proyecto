@@ -14,10 +14,10 @@ class Venta {
     protected $venta;
     protected $pedido;
 
-    public function __construct($tipoDeVenta) {
+    public function __construct(TipoVenta $tipoDeVenta) {
         $this->tipoVenta = $tipoDeVenta;
         $this->venta = new IniciarVenta($this);
-        //$this->pedido = new Pedido();
+        $this->pedido = new Pedido();
     }
 
     public function estadoSiguiente() {
@@ -37,8 +37,6 @@ class Venta {
     public function editarVenta() {
         //ni idea
     }
-
-
 
     public function eliminarVenta() {
         $this->venta->eliminarVenta();

@@ -13,15 +13,13 @@ class Pagado extends EstadoVenta {
     }
 
     public function estadoSiguiente() {
+        return 'Venta pagada y por lo tanto, finalizada.';
     }
     
-    public function getEstado() {
+    public function verVenta() {
     }
 
     public function editarVenta() {
-    }
-
-    public function getListaComida() {
     }
 
     public function eliminarVenta() {

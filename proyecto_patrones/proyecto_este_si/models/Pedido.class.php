@@ -8,21 +8,24 @@ require_once 'Venta.class.php';
 
 class Pedido {
 
-    public int $id_plato;
-    public String $nombre;
-    public int $precio;
+    public $id_pedido;
+    public $id_platoFondo;
+    public $id_platoEntrada;
+    public $precioTotal;
 
-    public function __construct($id_plato, $nombre, $precio) {
-        $this->id_plato = $id_plato;
-        $this->nombre = $nombre;
-        $this->precio = $precio;
+    public function __construct(PlatoFondo $platoFondo, PlatoEntrada $platoEntrada) {
+        $this->id_pedido = $id_pedido; //ver bien esto
+        $this->id_platoFondo = $platoFondo->id_plato;
+        $this->id_platoEntrada = $platoEntrada->id_plato;
+        $this->precioTotal = ($platoFondo->precio + $platoEntrada->precio);
     }
 
     public function mostrarPedido() {
         return array(
-            'id plato' => $this->id_plato,
-            'Nombre' => $this->nombre,
-            'Precio' => $this->precio
+            'id_pedido' => $this->id_pedido,
+            'id_platoFondo' => $this->id_platoFondo,
+            'id_platoEntrada' => $this->id_platoEntrada,
+            'Precio_Total' => $this->precioTotal
         );
     }
 }

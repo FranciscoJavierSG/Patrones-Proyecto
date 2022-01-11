@@ -14,8 +14,8 @@ class VentaEntregada extends EstadoVenta {
         parent::__construct($venta);
     }
 
+    //ver bien esto
     public function estadoSiguiente() {
-
         if ($this->venta->tipoVenta >= 2) {
             return new Consumiendo($this->venta);
         } else if ($this->venta->tipoVenta <= 1) {
@@ -23,13 +23,10 @@ class VentaEntregada extends EstadoVenta {
         }
     }
 
-    public function getEstado() {
+    public function verVenta() {
     }
 
     public function editarVenta() {
-    }
-
-    public function getListaComida() {
     }
 
     public function eliminarVenta() {
