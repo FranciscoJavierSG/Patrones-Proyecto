@@ -6,7 +6,7 @@ use Exception;
 
 
 require_once 'Venta.class.php';
-//require_once 'Restaurant.class.php';
+require_once 'Restaurant.class.php';
 require_once 'Pedido.class.php';
 require_once 'FabricaPedidosVegana.class.php';
 require_once 'FabricaPedidosCarne.class.php';
@@ -26,18 +26,29 @@ class State
     public function generar()
     {
         try {
-
-            $fabrica = new FabricaPedidosVegana();
-            $platoentrada=$fabrica->crearPlatoEntrada('Lechuga' ,  1, 'Lechuga', '2.000');
-            $platofondo= $fabrica->crearPlatoFondo('Porotos', 1, 'Porotos' , '4.000');
             
 
-            $pedido= new Pedido($platofondo, $platoentrada);
-
-            $venta = new Venta($pedido);
+            $fabrica = new FabricaPedidosVegana();
+            
+            $platoentrada=$fabrica->crearPlatoEntrada('Lechuga' ,  1, 'Lechuga', '2.000');
+            $fabrica2 = new FabricaPedidosVegana();
+            
+            $platofondo= $fabrica2->crearPlatoFondo('Porotos', 1, 'Porotos' , '4.000');
+            
 
             $r=Array();
+            $pedido= new Pedido($platofondo, $platoentrada);
 
+            //echo'alo';
+            $venta = new Venta($pedido);
+            echo'alo';
+            
+            
+/*
+            $r[]= Array("Pedido"=> $venta->verVenta());
+            $venta->estadoSiguiente();
+            $r[]= Array("Pedido2"=> $venta->verVenta());
+*/
 
             /*
             $venta->agregaProducto(new Producto('vehículo 1'));

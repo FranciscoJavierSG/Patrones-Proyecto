@@ -10,6 +10,7 @@ require_once 'Restaurant.class.php';
 class IniciarVenta extends EstadoVenta {
 
     public function __construct(Venta $venta) {
+        echo 'alo';
         parent::__construct($venta);
     }
 

@@ -12,6 +12,7 @@ class EntradaVegana extends PlatoEntrada {
 
     public function verPlatoEntrada() {
         return array(
+            'ingredientes' => $this->ingredientes,
             'id_plato' =>  $this->id_plato,
             'nombre' => $this->nombre,
             'precio' => $this->precio,

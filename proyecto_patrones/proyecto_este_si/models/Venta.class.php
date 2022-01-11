@@ -10,12 +10,18 @@ require_once 'IniciarVenta.class.php';
 
 class Venta {
 
+    
     protected $venta;
-    protected $pedido; //esto estaba comentado
+    protected $pedido;
 
-    public function __construct(Pedido $Pedido) {
+    public function __construct(Pedido $pedido) {
+        $this->pedido = $pedido;
+        //echo 'alo';
+        //esto esta malo o no funciona como deberia
         $this->venta = new IniciarVenta($this);
-        $this->pedido = $Pedido;
+        echo 'alo';
+        
+        
     }
 
     public function estadoSiguiente() {
@@ -28,10 +34,10 @@ class Venta {
 
     public function verVenta() {
         //$this->venta->verVenta();
-        return array(
+        /*return array(
             'venta' =>  $this->venta,
             'pedido' => $this->pedido
-        );
+        );*/
     }
 
     public function editarVenta() {

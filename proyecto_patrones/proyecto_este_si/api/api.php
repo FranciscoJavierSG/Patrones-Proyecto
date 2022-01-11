@@ -81,15 +81,18 @@ class apiPatrones
                 $this->response(200, "Error000", "No se agrego JSON");
             } else {
 
+                
                 $ejemplo = new State();
+                
                 $respuesta = $ejemplo->generar();
+                echo 'alo';
                 //var_dump($respuesta);
-                /*if ($respuesta['Estado'] == 'success') {
+                if ($respuesta['Estado'] == 'success') {
                     $this->response(200, "success", $respuesta['Response']);
                 } else {
                     $this->response(200, "Error999", $respuesta['Response']);
                     exit;
-                }*/
+                }
             }
 
             exit;
