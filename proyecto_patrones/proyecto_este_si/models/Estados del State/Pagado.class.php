@@ -13,7 +13,7 @@ class Pagado extends EstadoVenta {
     }
 
     public function estadoSiguiente() {
-        return 'Venta pagada y por lo tanto, finalizada.';
+        return $this;
     }
     
     public function verVenta() {

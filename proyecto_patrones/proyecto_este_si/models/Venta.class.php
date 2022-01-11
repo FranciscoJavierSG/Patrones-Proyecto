@@ -10,12 +10,10 @@ require_once 'Pedido.class.php';
 
 class Venta {
 
-    protected $tipoVenta;
     protected $venta;
     protected $pedido;
 
-    public function __construct(TipoVenta $tipoDeVenta) {
-        $this->tipoVenta = $tipoDeVenta;
+    public function __construct() {
         $this->venta = new IniciarVenta($this);
         $this->pedido = new Pedido();
     }
@@ -32,10 +30,11 @@ class Venta {
     }
 
     public function verVenta() {
+        $this->venta->verVenta();
     }
 
     public function editarVenta() {
-        //ni idea
+        $this->venta->editarVenta();
     }
 
     public function eliminarVenta() {
