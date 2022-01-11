@@ -39,7 +39,8 @@ class State
             $r=Array();
             $pedido= new Pedido($platofondo, $platoentrada);
 
-            $venta = new Venta($pedido);
+            $id_pedido =1;
+            $venta = new Venta($pedido,$id_pedido);
             
             
             

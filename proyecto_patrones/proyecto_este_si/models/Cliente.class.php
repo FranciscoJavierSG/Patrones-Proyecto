@@ -2,18 +2,9 @@
 
 namespace Proyecto;
 
-require_once 'Venta.class.php';
+require_once 'Restaurant.class.php';
+require_once 'Menu.class.php';
 class Cliente {
-
-    /**
-     *
-     * @param int $id_cliente         
-     * @param String $nombre
-     * @param String $correo
-     * @param int $telefono
-     * @param Array $ventas
-     *            
-     */
 
     public $id_cliente;
     public $nombre;
@@ -21,7 +12,7 @@ class Cliente {
     public $telefono;
     public $ventas;
 
-    public function __construct($id_cliente, $nombre, $correo, $telefono, $ventas) {
+    public function __construct($id_cliente, $nombre, $correo, $telefono,Restaurant $ventas) {
         $this->id_cliente = $id_cliente;
         $this->nombre = $nombre;
         $this->correo = $correo;

@@ -52,7 +52,7 @@ class apiPatrones
     {
 
        //probar que funcionen los distintos metodos
-        /*
+        
         if ($_GET['action'] == 'Menu') {
             $obj = json_decode(file_get_contents('php://input'));
             $objArr = (array) $obj;
@@ -60,7 +60,8 @@ class apiPatrones
                 $this->response(200, "Error000", "No se agrego JSON");
             } else {
 
-                $ejemplo = new Menu($obj->opcion, $obj->num_platosEntrada, $obj->num_platosFondo);
+                $ejemplo = new Menu($obj->opcion, $obj->num_platosEntrada, $obj->num_platosFondo
+            , $obj->stock, $obj->nombre,$obj->tipoIngrediente);
                 $respuesta = $ejemplo->generar();
                 // var_dump($respuesta);
                 if ($respuesta['Estado'] == 'success') {
@@ -72,7 +73,7 @@ class apiPatrones
             }
 
             exit;
-        }*/
+        }
 
         if ($_GET['action'] == 'State') {
             $obj = json_decode(file_get_contents('php://input'));
