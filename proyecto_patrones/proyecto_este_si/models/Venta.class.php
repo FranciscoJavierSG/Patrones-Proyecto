@@ -13,9 +13,9 @@ class Venta {
     protected $venta;
     protected $pedido;
 
-    public function __construct() {
+    public function __construct(Pedido $Pedido) {
         $this->venta = new IniciarVenta($this);
-        $this->pedido = new Pedido();
+        $this->pedido = $Pedido;
     }
 
     public function estadoSiguiente() {
@@ -24,9 +24,6 @@ class Venta {
 
     public function getEstado($venta) {
         return $this->venta; // no sé si ta bueno
-    }
-
-    public function crearVenta() {
     }
 
     public function verVenta() {
