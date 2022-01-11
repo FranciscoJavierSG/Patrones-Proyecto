@@ -16,17 +16,13 @@ abstract class EstadoVenta {
     public abstract function estadoSiguiente();
 
     public function getEstado() {
-
     }
 
     public function editarVenta() {
-
     }
 
     public function getListaComida() {
-
     }
 
     public abstract function eliminarVenta();
-
 }
