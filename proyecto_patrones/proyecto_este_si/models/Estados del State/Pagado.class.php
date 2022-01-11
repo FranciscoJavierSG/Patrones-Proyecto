@@ -12,4 +12,18 @@ class Pagado extends EstadoVenta {
         parent::__construct($venta);
     }
 
+    public function estadoSiguiente() {
+    }
+    
+    public function getEstado() {
+    }
+
+    public function editarVenta() {
+    }
+
+    public function getListaComida() {
+    }
+
+    public function eliminarVenta() {
+    }
 }

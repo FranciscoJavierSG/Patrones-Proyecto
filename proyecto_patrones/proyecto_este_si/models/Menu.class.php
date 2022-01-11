@@ -5,8 +5,7 @@ namespace Proyecto;
 use Exception;
 
 require_once 'FabricaPedidosVegana.class.php';
-
-require_once 'FabricaPedidosCarnica.class.php';
+require_once 'FabricaPedidosCarne.class.php';
 
 class Menu {
 
@@ -29,10 +28,10 @@ class Menu {
                     $fabrica = new FabricaPedidosVegana();
                     break;
                 case 2:
-                    $fabrica = new FabricaPedidosCarnica();
+                    $fabrica = new FabricaPedidosCarne();
                     break;
                 default:
-                    throw new \Exception("Opción " . $this->opcion . " desconocida --Opciones disponibles:: opc 1: FabricaPedidosVegana -opc 2: FabricaPedidosCarnica ");
+                    throw new \Exception("Opción " . $this->opcion . " desconocida --Opciones disponibles:: opc 1: FabricaPedidosVegana -opc 2: FabricaPedidosCarne ");
             }
 
             //revisar bien esto

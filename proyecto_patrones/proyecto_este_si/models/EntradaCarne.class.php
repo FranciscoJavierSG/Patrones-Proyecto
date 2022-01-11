@@ -4,7 +4,7 @@ namespace Proyecto;
 
 require_once 'PlatoEntrada.class.php';
 
-class EntradaCarnica extends PlatoEntrada {
+class EntradaCarne extends PlatoEntrada {
 
     public function __construct($id_plato, $nombre, $precio) {
         parent::__construct($id_plato, $nombre, $precio);

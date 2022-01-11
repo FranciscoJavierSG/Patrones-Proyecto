@@ -16,5 +16,16 @@ class PorPagar extends EstadoVenta {
     public function estadoSiguiente() {
         return new Pagado($this->venta);
     }
-    
+
+    public function getEstado() {
+    }
+
+    public function editarVenta() {
+    }
+
+    public function getListaComida() {
+    }
+
+    public function eliminarVenta() {
+    }
 }

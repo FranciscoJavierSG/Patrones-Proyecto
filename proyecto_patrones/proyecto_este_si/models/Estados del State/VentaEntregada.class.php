@@ -21,7 +21,17 @@ class VentaEntregada extends EstadoVenta {
         } else if ($this->venta->tipoVenta <= 1) {
             return new PorPagar($this->venta);
         }
-        
     }
 
+    public function getEstado() {
+    }
+
+    public function editarVenta() {
+    }
+
+    public function getListaComida() {
+    }
+
+    public function eliminarVenta() {
+    }
 }
