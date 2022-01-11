@@ -12,8 +12,8 @@ class Menu {
     public $opcion;
     public $num_platosEntrada;
     public $num_platosFondo;
-    public $PlatosEntrada;
-    public $PlatosFondo;
+    public $PlatosEntrada; //Array de platos de entrada
+    public $PlatosFondo; //Array de platos de fondo
 
     public function __construct($opcion, $num_platosEntrada = 0, $num_platosFondo = 0) {
         $this->opcion = $opcion;
@@ -65,12 +65,6 @@ class Menu {
     }
 
     public function editarMenu() {
-    }
-
-    public function editarPlato() {
-    }
-
-    public function eliminarPlato() {
     }
     
     public function validarPreparacionDisponible() {
