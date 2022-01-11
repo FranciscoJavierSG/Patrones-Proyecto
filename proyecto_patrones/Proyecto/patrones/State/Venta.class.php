@@ -6,6 +6,7 @@ require_once 'EstadoVenta.class.php';
 require_once 'TipoVenta.class.php';
 require_once 'Restaurant.class.php';
 require_once 'Cliente.class.php';
+require_once 'Pedido.class.php';
 
 class Venta {
 
@@ -13,7 +14,7 @@ class Venta {
     protected $venta;
     protected $pedido;
 
-    public function __construct(TipoVenta $tipoDeVenta) {
+    public function __construct($tipoDeVenta) {
         $this->tipoVenta = $tipoDeVenta; 
         $this->venta = new IniciarVenta($this);
         $this->pedido = new Pedido();
