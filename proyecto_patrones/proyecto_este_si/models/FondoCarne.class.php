@@ -12,6 +12,7 @@ class FondoCarne extends PlatoFondo {
 
     public function verPlatoFondo() {
         return array(
+            'ingredientes' =>  $this->ingredientes,
             'id_plato' =>  $this->id_plato,
             'nombre' => $this->nombre,
             'precio' => $this->precio,
