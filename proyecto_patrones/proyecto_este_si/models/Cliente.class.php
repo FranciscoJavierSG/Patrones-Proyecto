@@ -20,8 +20,6 @@ class Cliente {
         $this->ventas = $ventas;
     }
     public function getHistorialVenta() {
-        //aca deberia ir un for hipotetico en el que se muestren las ventas y los datos del cliente,
-        //sin embargo el cliente tiene un array de ventas documentado ahi arriba
         return array(
             'id_cliente' => $this->id_cliente,
             'nombre' => $this->nombre,
@@ -30,8 +28,7 @@ class Cliente {
             'ventas' => $this->ventas,
         );
     }
-    //redundante puesto en que en el historial deberia salir el nombre del cliente ,
-    // sin embargo lo pide asi que lo hice igual
+
     public function verCliente() {
         return array(
             'id_cliente' => $this->id_cliente,
@@ -41,10 +38,8 @@ class Cliente {
         );
     }
 
-    //Aca habria que ingresar valores nuevos y reemplazarlos por los existentes,
-    //Creo que solo con 1 edit basta...
+ 
     public function editarCliente(){}
-    //Esto deberia volver null al cliente de un id o nombre determinado, cuando tenamos todo 
-    //funcionando bien entonces lo implementaremos
+
     public function eliminarCliente(){}
 }

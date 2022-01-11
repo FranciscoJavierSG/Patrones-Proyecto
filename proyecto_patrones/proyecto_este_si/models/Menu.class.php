@@ -93,13 +93,7 @@ class Menu {
         }
     }
 
-    public function getMenu() {
-        return array(
-            'PlatosEntrada' => $this->PlatosEntrada,
-            'PlatosFondo' => $this->PlatosFondo
-        );
-    }
-
+    
     public function editarMenu() {
     }
 

@@ -18,8 +18,6 @@ class State
 
     public function __construct()
     {
-
-     
     }
 
     public function generarPedido()
@@ -42,9 +40,6 @@ class State
             $restaurant=new Restaurant($venta);
             $cliente= new Cliente(1,'Francisco', 'Fracisciquito@gmail', 123456789, $venta);
             
-            //$arrayCliente[]=$cliente->getHistorialVenta();
-            
-
             $r[]= Array("Pedido"=> $venta->verVenta());
             $venta->estadoSiguiente();
             $r[]= Array("Pedido2"=> $venta->verVenta());
