@@ -6,6 +6,7 @@ require_once 'EstadoVenta.class.php';
 //require_once 'TipoVenta.class.php';
 require_once 'Restaurant.class.php';
 require_once 'Pedido.class.php';
+require_once 'IniciarVenta.class.php';
 
 class Venta {
 
