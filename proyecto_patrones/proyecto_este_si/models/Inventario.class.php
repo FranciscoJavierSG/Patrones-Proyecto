@@ -3,7 +3,6 @@ namespace Proyecto;
 
 require_once 'Ingredientes.class.php';
 
-
 class Inventario extends Ingredientes{
 
     /**
