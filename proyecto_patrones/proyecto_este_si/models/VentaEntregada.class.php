@@ -5,7 +5,7 @@ namespace Proyecto;
 require_once 'EstadoVenta.class.php';
 require_once 'Venta.class.php';
 require_once 'Consumiendo.class.php';
-require_once 'PorPagar.php';
+//require_once 'PorPagar.php';
 require_once 'Restaurant.class.php';
 
 class VentaEntregada extends EstadoVenta {
