@@ -4,7 +4,6 @@ namespace Proyecto;
 
 require_once 'PlatoFondo.class.php';
 
-
 class FondoCarnico extends PlatoFondo {
 
     public function __construct($ingredientes, $id_plato, $nombre, $precio) {
