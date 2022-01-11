@@ -9,7 +9,7 @@ class Inventario {
     /**
      *
      * @param bool $disponible                         
-     *     
+     * @param array $ingrediente    
      * return $disponible
      */
    
