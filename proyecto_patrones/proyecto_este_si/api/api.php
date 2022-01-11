@@ -2,7 +2,10 @@
 header('Content-Type: text/html; charset=utf-8');
 
 require_once './models/Menu.class.php';
+require_once './models/State.class.php';
 use Proyecto\Menu;
+use Proyecto\State;
+
 
 
 
@@ -19,6 +22,7 @@ class apiPatrones
                 break;
                 break;
             case 'POST': //actualiza
+                
 
                 $this->EjemplosPatrones();
                 break;
@@ -48,6 +52,7 @@ class apiPatrones
     {
 
        //probar que funcionen los distintos metodos
+        /*
         if ($_GET['action'] == 'Menu') {
             $obj = json_decode(file_get_contents('php://input'));
             $objArr = (array) $obj;
@@ -67,28 +72,28 @@ class apiPatrones
             }
 
             exit;
-        }
-/*
-        if ($_GET['action'] == 'EjemploState') {
+        }*/
+
+        if ($_GET['action'] == 'State') {
             $obj = json_decode(file_get_contents('php://input'));
             $objArr = (array) $obj;
             if (!empty($objArr)) {
                 $this->response(200, "Error000", "No se agrego JSON");
             } else {
 
-                $ejemplo = new EjemploState();
+                $ejemplo = new State();
                 $respuesta = $ejemplo->generar();
                 //var_dump($respuesta);
-                if ($respuesta['Estado'] == 'success') {
+                /*if ($respuesta['Estado'] == 'success') {
                     $this->response(200, "success", $respuesta['Response']);
                 } else {
                     $this->response(200, "Error999", $respuesta['Response']);
                     exit;
-                }
+                }*/
             }
 
             exit;
-        }*/
+        }
 
 
         $this->response(400);

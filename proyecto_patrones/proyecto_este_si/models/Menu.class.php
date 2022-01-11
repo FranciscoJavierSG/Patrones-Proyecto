@@ -37,10 +37,12 @@ class Menu {
             //revisar bien esto
             for ($i = 0; $i < $this->num_platosEntrada; $i++) {
                 $PlatosEntrada[$i] = $fabrica->crearPlatoEntrada('Lechuga' . $i,  $i, 'Lechuga' . $i, '2.000' . $i);
+                
             }
             for ($i = 0; $i < $this->num_platosFondo; $i++) {
                 $PlatosFondo[$i] = $fabrica->crearPlatoFondo('Porotos' . $i, $i, 'Porotos' . $i, '4.000' . $i);
             }
+
 
             $r = array(
                 "PlatosEntrada" => $PlatosEntrada,

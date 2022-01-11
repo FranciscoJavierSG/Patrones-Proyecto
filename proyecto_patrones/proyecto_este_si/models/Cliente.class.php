@@ -52,8 +52,8 @@ class Cliente {
 
     //Aca habria que ingresar valores nuevos y reemplazarlos por los existentes,
     //Creo que solo con 1 edit basta...
-    public function editarCliente();
+    public function editarCliente(){}
     //Esto deberia volver null al cliente de un id o nombre determinado, cuando tenamos todo 
     //funcionando bien entonces lo implementaremos
-    public function eliminarCliente();
+    public function eliminarCliente(){}
 }

@@ -6,8 +6,8 @@ require_once 'PlatoEntrada.class.php';
 
 class EntradaCarne extends PlatoEntrada {
 
-    public function __construct($id_plato, $nombre, $precio) {
-        parent::__construct($id_plato, $nombre, $precio);
+    public function __construct($ingredientes,$id_plato, $nombre, $precio) {
+        parent::__construct($ingredientes,$id_plato, $nombre, $precio);
     }
 
     public function verPlatoEntrada() {

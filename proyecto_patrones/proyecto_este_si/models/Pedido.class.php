@@ -4,7 +4,7 @@ namespace Proyecto;
 
 require_once 'PlatoEntrada.class.php';
 require_once 'PlatoFondo.class.php';
-require_once 'Venta.class.php';
+
 
 class Pedido {
 
@@ -22,7 +22,7 @@ class Pedido {
 
     public function mostrarPedido() {
         return array(
-            'id_pedido' => $this->id_pedido,
+            //'id_pedido' => $this->id_pedido,
             'id_platoFondo' => $this->id_platoFondo,
             'id_platoEntrada' => $this->id_platoEntrada,
             'Precio_Total' => $this->precioTotal
