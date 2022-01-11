@@ -7,7 +7,8 @@ abstract class PlatoEntrada {
     public $id_plato;
     public $precio;
 
-    public function __construct($nombre, $id_plato, $precio) {
+    public function __construct($ingredientes, $nombre, $id_plato, $precio) {
+        $this->ingredientes = $ingredientes;
         $this->nombre = $nombre;
         $this->id_plato = $id_plato;
         $this->precio = $precio;

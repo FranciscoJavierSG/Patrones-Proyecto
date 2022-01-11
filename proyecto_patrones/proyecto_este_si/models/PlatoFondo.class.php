@@ -3,6 +3,7 @@
 namespace Proyecto;
 
 abstract class PlatoFondo {
+
     public $ingredientes;
     public $nombre;
     public $id_plato;
