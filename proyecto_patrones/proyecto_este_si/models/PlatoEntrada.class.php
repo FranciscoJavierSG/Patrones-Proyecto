@@ -3,6 +3,8 @@
 namespace Proyecto;
 
 abstract class PlatoEntrada {
+    
+    public $ingredientes;
     public $nombre;
     public $id_plato;
     public $precio;
