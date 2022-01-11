@@ -28,7 +28,7 @@ class Menu {
         $this->tipoIngrediente = $tipoIngrediente;
     }
 
-    public function generar() {
+    public function generarPreparacion() {
         try {
 
            
@@ -94,6 +94,10 @@ class Menu {
     }
 
     public function getMenu() {
+        return array(
+            'PlatosEntrada' => $this->PlatosEntrada,
+            'PlatosFondo' => $this->PlatosFondo
+        );
     }
 
     public function editarMenu() {

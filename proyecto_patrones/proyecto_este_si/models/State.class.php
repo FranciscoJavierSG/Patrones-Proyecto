@@ -16,20 +16,16 @@ require_once 'Cliente.class.php';
 class State
 {
 
-
-
     public function __construct()
     {
 
      
     }
 
-    public function generar()
+    public function generarPedido()
     {
         try {
-            
-
-            
+                   
             $fabrica = new FabricaPedidosVegana();
             
             $platoentrada=$fabrica->crearPlatoEntrada('Lechuga' ,  1, 'Lechuga', '2.000');
@@ -62,9 +58,7 @@ class State
             $r[]= Array("Pedido6"=> $venta->verVenta());
             $r[]=Array("Cliente" => $cliente->getHistorialVenta());
 
-
-            
-           
+     
           
             $respuesta = array('Estado' => "success",
                 'Response' => $r);

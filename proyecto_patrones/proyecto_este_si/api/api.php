@@ -62,7 +62,7 @@ class apiPatrones
 
                 $ejemplo = new Menu($obj->opcion, $obj->num_platosEntrada, $obj->num_platosFondo
             , $obj->stock, $obj->nombre,$obj->tipoIngrediente);
-                $respuesta = $ejemplo->generar();
+                $respuesta = $ejemplo->generarPreparacion();
                 // var_dump($respuesta);
                 if ($respuesta['Estado'] == 'success') {
                     $this->response(200, "success", $respuesta['Response']);
@@ -85,7 +85,7 @@ class apiPatrones
                 
                 $ejemplo = new State();
                 
-                $respuesta = $ejemplo->generar();
+                $respuesta = $ejemplo->generarPedido();
                 echo 'alo';
                 //var_dump($respuesta);
                 if ($respuesta['Estado'] == 'success') {
