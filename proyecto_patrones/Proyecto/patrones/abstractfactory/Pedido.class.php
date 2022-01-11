@@ -19,7 +19,7 @@ class EntradaCarnica
         $this->precio = $precio;
       
     }
-    public function mostrarPedido($id_plato,$nombre,$precio){
+    public function mostrarPedido(){
         return array(
             'id plato' => $this->$id_plato,
             'Nombre' => $this->$id_plato,

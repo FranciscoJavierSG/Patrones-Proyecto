@@ -3,17 +3,7 @@ namespace Proyecto;
 
 abstract class PlatoEntrada
 {
-    /**
-     * 
-     * @var array
-     */
-    public $ingredientes;
-    /**
-     * 
-     * @var int
-     */
-
-    public $id_plato
+    
     /**
      * 
      * @var string
@@ -22,17 +12,28 @@ abstract class PlatoEntrada
     public $nombre
  
     /**
+     * 
+     * @var int
+     */
+    public $id_plato;
+    /**
+     * 
+     * @var int
+     */
+
+    public $precio
+    /**
      *
-     * @param array $ingredientes           
+     * @param array $nombre           
      * @param int $id_plato  
-     * @param string $nombre
+     * @param string $precio
      *           
      */
-    public function __construct($ingredientes, $id_plato, $nombre)
+    public function __construct($nombre, $id_plato, $precio)
     {
-        $this->ingredientes = $ingredientes;
-        $this->id_plato = $id_plato;
         $this->nombre = $nombre;
+        $this->id_plato = $id_plato;
+        $this->precio = $precio;
       
     }
 

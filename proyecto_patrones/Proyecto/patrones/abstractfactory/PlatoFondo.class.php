@@ -6,34 +6,34 @@ abstract class PlatoFondo
 
     /**
      * 
-     * @var array
-     */
-    public $ingredientes;
-    /**
-     * 
-     * @var int
-     */
-
-    public $id_plato
-    /**
-     * 
      * @var string
      */
 
     public $nombre
  
     /**
+     * 
+     * @var int
+     */
+    public $id_plato;
+    /**
+     * 
+     * @var int
+     */
+
+    public $precio
+    /**
      *
-     * @param array $ingredientes           
-     * @param int $id_plato   
-     * @param string $nombre    
+     * @param array $nombre           
+     * @param int $id_plato  
+     * @param string $precio
      *           
      */
-    public function __construct($ingredientes, $id_plato, $nombre)
+    public function __construct($nombre, $id_plato, $precio)
     {
-        $this->ingredientes = $ingredientes;
-        $this->id_plato = $id_plato;
         $this->nombre = $nombre;
+        $this->id_plato = $id_plato;
+        $this->precio = $precio;
       
     }
 

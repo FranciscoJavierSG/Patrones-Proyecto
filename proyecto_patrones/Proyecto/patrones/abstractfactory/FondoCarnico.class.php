@@ -8,25 +8,24 @@ class FondoCarnico extends PlatoFondo
 {
     /**
      *
-     * @param array $ingredientes                   
-     * @param int $id_plato     
-     * @param string $nombre    
+     * @param int $id_plato                         
+     * @param string $nombre   
+     * @param int $precio       
      */
-    public function __construct($ingredientes, $id_plato, $nombre)
+    public function __construct($id_plato, $nombre, $precio)
     {
-        parent::__construct($ingredientes, $id_plato, $nombre;
+        parent::__construct($id_plato, $nombre, $precio);
     }
 
 
 
     public function verPlatoFondo()
-    {
-      
+    {  
         return array(
     
-        'ingredientes' =>  $this->ingredientes,
-        'id_plato' => $this->id_plato,
+        'id_plato' =>  $this->id_plato,
         'nombre' => $this->nombre,
+        'precio' => $this->precio,
         );
     }
 
