@@ -39,16 +39,24 @@ class State
             $r=Array();
             $pedido= new Pedido($platofondo, $platoentrada);
 
-            //echo'alo';
             $venta = new Venta($pedido);
-            echo'alo';
             
             
-/*
+            
+
             $r[]= Array("Pedido"=> $venta->verVenta());
             $venta->estadoSiguiente();
             $r[]= Array("Pedido2"=> $venta->verVenta());
-*/
+            $venta->estadoSiguiente();
+            $r[]= Array("Pedido3"=> $venta->verVenta());
+            $venta->estadoSiguiente();
+            $r[]= Array("Pedido4"=> $venta->verVenta());
+            $venta->estadoSiguiente();
+            $r[]= Array("Pedido5"=> $venta->verVenta());
+            $venta->estadoSiguiente();
+            $r[]= Array("Pedido6"=> $venta->verVenta());
+            
+
 
             /*
             $venta->agregaProducto(new Producto('vehículo 1'));

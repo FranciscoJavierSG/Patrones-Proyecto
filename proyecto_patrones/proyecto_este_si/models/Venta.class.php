@@ -34,10 +34,10 @@ class Venta {
 
     public function verVenta() {
         //$this->venta->verVenta();
-        /*return array(
+        return array(
             'venta' =>  $this->venta,
             'pedido' => $this->pedido
-        );*/
+        );
     }
 
     public function editarVenta() {
