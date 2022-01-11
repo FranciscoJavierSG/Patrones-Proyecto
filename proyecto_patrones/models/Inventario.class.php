@@ -23,14 +23,14 @@ class Inventario extends Ingredientes{
      // podria sacarlos implementando los metodos de ingrediente tambien!)
      public function eliminarIngrediente($nombre){
      }
-     public function modificiarIngrediente();
-     public function modificarStock();
+     public function modificiarIngrediente(){}
+     public function modificarStock(){}
 
      //Esta funcion deberia mostrar los ingredientes
-     public function verIngrediente();
+     public function verIngrediente(){}
 
      //Esta funcion retorna el booleano
-     public function validarStockIngrediente();
+     public function validarStockIngrediente(){}
 
 
 }

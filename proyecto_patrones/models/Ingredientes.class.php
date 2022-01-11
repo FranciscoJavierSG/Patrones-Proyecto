@@ -17,7 +17,7 @@ abstract class Ingredientes {
 
      public function __construct($stock, $nombre, $tipoIngrediente)
      {
-         $this->id_plato = $id_plato;
+         $this->stock = $stock;
          $this->nombre = $nombre;
          $this->tipoIngrediente = $tipoIngrediente;
        
